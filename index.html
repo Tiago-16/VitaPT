@@ -299,11 +299,11 @@
           <img id="previewImg" alt="preview">
         </div>
         <div style="display:flex;gap:8px;justify-content:center">
-          <button class="btn-secondary" onclick="document.getElementById('fileInputGallery').click()"><i class="ti ti-photo"></i> galeria</button>
-          <button class="btn-secondary" onclick="document.getElementById('fileInput').click()"><i class="ti ti-camera"></i> câmara</button>
+          <button class="btn-primary" onclick="document.getElementById('fileInput').click()"><i class="ti ti-camera"></i> foto / galeria</button>
+          
           <button class="btn-primary" id="analyzeBtn" onclick="analyzeImage()" style="display:none"><i class="ti ti-sparkles"></i> analisar IA</button>
         </div>
-        <input type="file" id="fileInput" accept="image/*" capture="environment" onchange="previewImage(this)"><input type="file" id="fileInputGallery" accept="image/*" onchange="previewImage(this)" style="display:none">
+        <input type="file" id="fileInput" accept="image/*" onchange="previewImage(this)">
       </div>
       <div class="ai-result" id="aiResult">
         <h4><i class="ti ti-sparkles"></i> detetado pela IA</h4>
